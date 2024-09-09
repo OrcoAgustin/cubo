@@ -3,16 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Generador de respuestas basicas para consultores</h1>
-    <div>
-      <button id="boton">Apretame para respuesta</button>
-      <h3 id="respuesta">a</h3>
-      <img src="img\base.jpg" alt="" id="imagen" />
-    </div>
+    <title>Respuestas</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="lightMode" id="cuerpo">
+    <div>
+      <nav class="navbar navLigth" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1>Generador de respuestas basicas para consultores</h1>
+          </a>
+          <button type="button" class="btn btn-secondary" id="lightDark">
+            Modo oscuro
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div id="seccion">
+    <button type="button" class="btn btn-lg btn-secondary" id="boton">
+      Apretame para respuesta
+    </button>
+    <div><h3>:D</h3><div>
+    <div><h3 id="respuesta"></h3></div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>

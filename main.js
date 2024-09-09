@@ -12,10 +12,23 @@ function conseguirRespuestas() {
     i = Math.trunc(Math.random() * 10);
   }
   console.log(i, respuestas[i]);
+  let a = i;
   return i;
 }
 
 $("#boton").click(function () {
-  $("#respuesta").html(conseguirRespuestas());
-  $("#imagen").attr("src", `img/i${conseguirRespuestas()}.jpg`);
+  let v = conseguirRespuestas();
+  $("#respuesta").html(respuestas[v]);
+});
+
+$("#lightDark").click(function () {
+  if ($("#nav").attr("class") == "navbar navLigth") {
+    $("#nav").attr("class", "navbar navDark");
+    $("#cuerpo").attr("class", "darkMode");
+    $("#lightDark").html("Modo Claro");
+  } else {
+    $("#nav").attr("class", "navbar navLigth");
+    $("#cuerpo").attr("class", "lightMode");
+    $("#lightDark").html("Modo Oscuro");
+  }
 });
