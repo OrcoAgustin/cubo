@@ -5,11 +5,10 @@ let respuestas = [
   "Es un problema general",
   "Lo estamos viendo...",
   "Es un problema en el server",
-  "Mas despacio que soy dislexico",
 ];
 function conseguirRespuestas() {
   let i = -1;
-  while (i < 0 || i > 6) {
+  while (i < 0 || i > 5) {
     i = Math.trunc(Math.random() * 10);
   }
   console.log(i, respuestas[i]);
