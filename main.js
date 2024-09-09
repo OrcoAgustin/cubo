@@ -16,7 +16,6 @@ function conseguirRespuestas() {
 }
 
 $("#boton").click(function () {
-  let i = conseguirRespuestas();
-  $("#respuesta").html(respuestas[i]);
-  $("#imagen").attr("src", `img/i${i}.jpg`);
+  $("#respuesta").html(conseguirRespuestas());
+  $("#imagen").attr("src", `img/i${conseguirRespuestas()}.jpg`);
 });
